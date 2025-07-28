@@ -1,8 +1,8 @@
 # **TATA Virtual Internship: Market Basket Analysis Using Apriori**
-### **Project Overview**
+## **Project Overview**
 **This project is part of the TATA Virtual Internship Program and focuses on performing Market Basket Analysis using transactional retail data. The primary goal is to extract meaningful insights about customer purchase behavior through association rule mining using the Apriori algorithm.**
 
-### **Dataset Description**
+## **Dataset Description**
 The dataset used (Online Retail.xlsx) contains transactional data for a UK-based online retail store. It includes the following fields:
 
 - InvoiceNo: Unique invoice number
@@ -21,7 +21,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Country: Country of the customer
 
-### **Key Objectives**
+## **Key Objectives**
 - Clean and preprocess transactional data
 
 - Create a product-basket matrix for the United Kingdom
@@ -32,7 +32,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Export actionable rules for marketing and business strategy
 
-### **Tools & Libraries Used**
+## **Tools & Libraries Used**
 - Python
 
 - Pandas – Data manipulation
@@ -45,8 +45,8 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Google Colab – Development environment
 
-### **Project Workflow**
-1. #### **Data Cleaning**
+## **Project Workflow**
+1. ### **Data Cleaning**
 
 - Remove missing CustomerID
 
@@ -54,7 +54,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Parse InvoiceDate to datetime format
 
-2. #### **Market Basket Transformation**
+2. ### **Market Basket Transformation**
 
 - Filter data for United Kingdom
 
@@ -62,7 +62,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Convert to binary matrix (True = purchased, False = not purchased)
 
-3. #### **Association Rule Mining**
+3. ### **Association Rule Mining**
 
 - Apply the Apriori algorithm with a minimum support of 1%
 
@@ -70,23 +70,23 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Sort rules by lift to identify strong associations
 
-4. #### **Visualization**
+4. ### **Visualization**
 
 - Bar plot of top 10 rules by lift
 
 - Bubble chart: support vs confidence (lift as bubble size)
 
-5. #### **Export Results**
+5. ### **Export Results**
 
 - Rules exported to CSV format (association_rules.csv)
 
-### **Output**
+## **Output**
 
 - association_rules.csv: List of top product associations with metrics like support, confidence, and lift
 
 - Visual charts displaying top rules and relationships
 
-### **How to Run**
+## **How to Run**
 1. Open the project in Google Colab
 
 2. Upload the dataset Online Retail.xlsx
