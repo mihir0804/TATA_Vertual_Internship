@@ -1,104 +1,105 @@
-TATA Virtual Internship: Market Basket Analysis Using Apriori
-Project Overview
-This project is part of the TATA Virtual Internship Program and focuses on performing Market Basket Analysis using transactional retail data. The primary goal is to extract meaningful insights about customer purchase behavior through association rule mining using the Apriori algorithm.
+# **TATA Virtual Internship: Market Basket Analysis Using Apriori**
+### **Project Overview**
+**This project is part of the TATA Virtual Internship Program and focuses on performing Market Basket Analysis using transactional retail data. The primary goal is to extract meaningful insights about customer purchase behavior through association rule mining using the Apriori algorithm.**
 
-Dataset Description
+### **Dataset Description**
 The dataset used (Online Retail.xlsx) contains transactional data for a UK-based online retail store. It includes the following fields:
 
-InvoiceNo: Unique invoice number
+- InvoiceNo: Unique invoice number
 
-StockCode: Product/item code
+- StockCode: Product/item code
 
-Description: Product name
+- Description: Product name
 
-Quantity: Number of products purchased
+- Quantity: Number of products purchased
 
-InvoiceDate: Date and time of transaction
+- InvoiceDate: Date and time of transaction
 
-UnitPrice: Price per unit
+- UnitPrice: Price per unit
 
-CustomerID: Customer identifier
+- CustomerID: Customer identifier
 
-Country: Country of the customer
+- Country: Country of the customer
 
-Key Objectives
-Clean and preprocess transactional data
+### **Key Objectives**
+- Clean and preprocess transactional data
 
-Create a product-basket matrix for the United Kingdom
+- Create a product-basket matrix for the United Kingdom
 
-Apply the Apriori algorithm to identify frequent itemsets
+- Apply the Apriori algorithm to identify frequent itemsets
 
-Generate and visualize association rules
+- Generate and visualize association rules
 
-Export actionable rules for marketing and business strategy
+- Export actionable rules for marketing and business strategy
 
-Tools & Libraries Used
-Python
+### **Tools & Libraries Used**
+- Python
 
-Pandas – Data manipulation
+- Pandas – Data manipulation
 
-Seaborn / Matplotlib – Data visualization
+- Seaborn / Matplotlib – Data visualization
 
-Scikit-learn – Model support libraries
+- Scikit-learn – Model support libraries
 
-Mlxtend – Association rule mining (apriori, association_rules)
+- Mlxtend – Association rule mining (apriori, association_rules)
 
-Google Colab – Development environment
+- Google Colab – Development environment
 
-Project Workflow
-Data Cleaning
+### **Project Workflow**
+1. **Data Cleaning**
 
-Remove missing CustomerID
+- Remove missing CustomerID
 
-Create Revenue column from Quantity * UnitPrice
+- Create Revenue column from Quantity * UnitPrice
 
-Parse InvoiceDate to datetime format
+- Parse InvoiceDate to datetime format
 
-Market Basket Transformation
+2. **Market Basket Transformation**
 
-Filter data for United Kingdom
+- Filter data for United Kingdom
 
-Generate a pivot table: InvoiceNo x Product
+- Generate a pivot table: InvoiceNo x Product
 
-Convert to binary matrix (True = purchased, False = not purchased)
+- Convert to binary matrix (True = purchased, False = not purchased)
 
-Association Rule Mining
+3. **Association Rule Mining**
 
-Apply the Apriori algorithm with a minimum support of 1%
+- Apply the Apriori algorithm with a minimum support of 1%
 
-Generate rules with a lift of at least 1.0
+- Generate rules with a lift of at least 1.0
 
-Sort rules by lift to identify strong associations
+- Sort rules by lift to identify strong associations
 
-Visualization
+4. **Visualization**
 
-Bar plot of top 10 rules by lift
+- Bar plot of top 10 rules by lift
 
-Bubble chart: support vs confidence (lift as bubble size)
+- Bubble chart: support vs confidence (lift as bubble size)
 
-Export Results
+5. **Export Results**
 
-Rules exported to CSV format (association_rules.csv)
+- Rules exported to CSV format (association_rules.csv)
 
-Output
-association_rules.csv: List of top product associations with metrics like support, confidence, and lift
+### **Output**
 
-Visual charts displaying top rules and relationships
+- association_rules.csv: List of top product associations with metrics like support, confidence, and lift
 
-How to Run
-Open the project in Google Colab
+- Visual charts displaying top rules and relationships
 
-Upload the dataset Online Retail.xlsx
+### **How to Run**
+1. Open the project in Google Colab
 
-Run all cells to:
+2. Upload the dataset Online Retail.xlsx
 
-Clean data
+3. Run all cells to:
 
-Apply Apriori
+- Clean data
 
-Generate and download results
+- Apply Apriori
 
-Author
-Mihir Ughade
-GitHub: https://github.com/mihir0804
-LinkedIn: https://www.linkedin.com/in/mihir-ughade-00601223a/
+- Generate and download results
+
+**Author**
+**Mihir Ughade**
+**GitHub: https://github.com/mihir0804**
+**LinkedIn: https://www.linkedin.com/in/mihir-ughade-00601223a/**
