@@ -46,7 +46,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 - Google Colab – Development environment
 
 ### **Project Workflow**
-1. **Data Cleaning**
+1. #### **Data Cleaning**
 
 - Remove missing CustomerID
 
@@ -54,7 +54,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Parse InvoiceDate to datetime format
 
-2. **Market Basket Transformation**
+2. #### **Market Basket Transformation**
 
 - Filter data for United Kingdom
 
@@ -62,7 +62,7 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Convert to binary matrix (True = purchased, False = not purchased)
 
-3. **Association Rule Mining**
+3. #### **Association Rule Mining**
 
 - Apply the Apriori algorithm with a minimum support of 1%
 
@@ -70,13 +70,13 @@ The dataset used (Online Retail.xlsx) contains transactional data for a UK-based
 
 - Sort rules by lift to identify strong associations
 
-4. **Visualization**
+4. #### **Visualization**
 
 - Bar plot of top 10 rules by lift
 
 - Bubble chart: support vs confidence (lift as bubble size)
 
-5. **Export Results**
+5. #### **Export Results**
 
 - Rules exported to CSV format (association_rules.csv)
 
